@@ -1,17 +1,18 @@
 
 import './App.css';
-
+import '/node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '/node_modules/bootstrap-icons/font/bootstrap-icons.css';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <h1>Inicio</h1>
-
-      </header>
-    </div>
+    <>
+     <NavBar />
+      <ItemListContainer greeting="Bienvenido a mi tienda" >
+      </ItemListContainer>
+    </>
   );
 }
 
